@@ -1,2 +1,35 @@
 /* style.css */
-/* empty for now */
+/* empty for now */body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* optional, ensures full viewport height */
+    margin: 0; /* remove default spacing */
+}
+
+/* Make main a flex container in row direction */
+main {
+    display: flex;
+    flex-direction: row;
+    flex: auto; /* allow main to expand automatically */
+}
+
+/* Article takes 2/3 of the width */
+article {
+    flex: 2;
+    overflow-y: auto; /* scroll if content overflows vertically */
+    padding: 1em; /* optional, spacing inside article */
+}
+
+/* Aside takes 1/3 of the width */
+aside {
+    flex: 1;
+    overflow-y: auto; /* scroll if content overflows vertically */
+    padding: 1em; /* optional, spacing inside aside */
+}
+
+/* Optional: make header and footer stand out */
+header, footer {
+    padding: 1em;
+    background-color: #e0e0e0;
+    text-align: center;
+}
