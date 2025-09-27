@@ -12,3 +12,12 @@ h1, h1, h3, h4 ,h5, h6 {
 a:hover{
     text-decoration: underline;
 }
+header, footer {
+    padding: 1em;
+    background-color: #e0e0e0;
+    text-align: center;
+}
+
+article, aside {
+    padding: 1em;
+}
