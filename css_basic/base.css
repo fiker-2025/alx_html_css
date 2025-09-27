@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+    padding: 0;
+    font_family: Arial, sans-serif;
+    line_height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+h1, h1, h3, h4 ,h5, h6 {
+    margin: 0.5em 0;
+}
+a:hover{
+    text_decoration: underline;
+}
