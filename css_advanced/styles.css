@@ -1,3 +1,4 @@
+/* Global / Body */
 body {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 16px;
@@ -95,4 +96,49 @@ header {
   font-size: 16px;
   font-weight: 700;
   color: #555555;
+}
+
+/* Videos List Section */
+.videos {
+  background-color: #f9f9fb;
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.videos h2 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 2rem;
+}
+
+.video-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.video-item {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 1rem;
+  width: 250px;
+  text-align: center;
+}
+
+.video-item img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.video-item h3 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #2c3e50;
+  margin: 0;
 }
