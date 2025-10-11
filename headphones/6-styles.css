@@ -1,0 +1,22 @@
+.pentagons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 100px;
+  background: #fff;
+}
+
+.pentagon {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background: #ff6565;
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  color: white;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}

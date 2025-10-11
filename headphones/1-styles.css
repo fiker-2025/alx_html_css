@@ -1,0 +1,21 @@
+
+@import url('0-styles.css');
+
+.what-we-do {
+  text-align: center;
+  padding: 100px 40px;
+  background: #fff;
+  color: #000;
+}
+
+.what-we-do h2 { font-size: 32px; margin-bottom: 20px; }
+.what-we-do p { margin-bottom: 60px; }
+
+.icons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 40px;
+}
+
+.icon img { width: 60px; }
+.icon h3 { margin-top: 10px; }
