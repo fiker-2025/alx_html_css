@@ -1,15 +1,211 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Headphones</title>
-  <link rel="stylesheet" href="4-styles.css">
+  <link rel="stylesheet" href="images/holberton_school-icon/style.css">
+  <link rel="stylesheet" href="4-styles.css" /> 
+  
+  
+
 </head>
 <body>
-  <footer>
-    <img src="images/logo_headphones.png" alt="Logo" class="logo">
-    <p>&copy; 2025 Headphones. All rights reserved.</p>
-  </footer>
+  <header class="header">
+    <div class="container header-content">
+      <div class="logo">
+        <img src="images/logo_headphones.png" alt="Headphones Logo" />
+      </div>
+
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="#what-we-do">what we do</a></li>
+          <li><a href="#our-results">our results</a></li>
+          <li><a href="#contact">contact us</a></li>
+        </ul>
+      </nav>
+    
+    </div>
+  </header>
+
+  
+
+  <section class="hero">
+    <div class="container hero-content">
+    <h1 class="hero-title">Lorem ipsum dolor set amet lorem ipsum</h1>
+    <p class="hero-subtitle">Lorem ipsum dolor set amet lorem ipsum dolor set</p>
+    <a href="#contact" class="cta-btn">CALL TO ACTION</a>
+    
+    <div>
+    <p class="hero-description">
+    Lorem ipsum dolor amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore officiis sint praesentium modi esse ipsa incidunt, provident doloribus repellat inventore minus impedit perferendis similique vero aperiam beatae libero reiciendis. Nam!
+    
+    </p>
+    </div>
+  </div>
+</section>
+
+
+<section class="what-we-do" id="what-we-do">
+  <div class="container">
+    <div class="section-header">
+      <h2>What We Do</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+    </div>
+
+    <div class="features">
+      <div class="feature">
+        <i class="holberton_school-icon-ic_sound feature-icon"></i>
+        <h3>High-Quality Sound</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+
+      <div class="feature">
+        <i class="holberton_school-icon-ic_video feature-icon"></i>
+        <h3>Immersive Experience</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+
+      <div class="feature">
+        <i class="holberton_school-icon-ic_music feature-icon"></i>
+        <h3>Crystal Clear Audio</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+
+      <div class="feature">
+        <i class="holberton_school-icon-ic_hearing feature-icon"></i>
+        <h3>Comfortable Design</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </div>
+  </div>
+</section>
+ <!-- Our results Section-->
+<section class="our-results" id="our-results">
+  <div class="container">
+    <div class="section-header">
+      
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum non deserunt eum officia vero maiores voluptatum, repellendus commodi expedita atque fugiat aliquam dolorem ullam at ducimus mollitia eveniet, vel dignissimos.
+        
+      </p>
+    </div>
+
+    <div class="results-grid">
+      <div class="result-card">
+        <div class="pentagon">
+          <span class="percent">+2%</span>
+          <p>Lorem ipsum dolor</p>
+        </div>
+      </div>
+
+      <div class="result-card">
+        <div class="pentagon">
+          <span class="percent">+2%</span>
+          <p>Lorem ipsum dolor</p>
+        </div>
+      </div>
+
+      <div class="result-card">
+        <div class="pentagon">
+          <span class="percent">+2%</span>
+          <p>Lorem ipsum dolor</p>
+        </div>
+      </div>
+
+      <div class="result-card">
+        <div class="pentagon">
+          <span class="percent">+2%</span>
+          <p>Lorem ipsum dolor</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- CONTACT SECTION -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="section-header">
+      <h2>Contact Us</h2>
+      <p>
+        Get in touch with us! Have a question or feedback? Fill out the form and we’ll get back to you as soon as possible.
+      </p>
+    </div>
+
+    <form class="contact-form" action="#" method="POST">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your full name"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email address"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="5"
+          placeholder="Write your message here"
+          required
+        ></textarea>
+      </div>
+
+      <button type="submit" class="btn-submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+ <!-- End of the Conatct Section-->
+
+   <!-- FOOTER SECTION -->
+    <!-- FOOTER SECTION -->
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-left">
+      <img src="images/logo_headphones.png" alt="Headphones Logo" class="footer-logo" />
+      
+    </div>
+
+    <div class="footer-right">
+      <a href="#" aria-label="Facebook">
+        <i class="holberton_school-icon-ic_facebook"></i>
+      </a>
+      <a href="#" aria-label="Twitter">
+        <i class="holberton_school-icon-ic_twitter"></i>
+      </a>
+      <a href="#" aria-label="Instagram">
+        <i class="holberton_school-icon-ic_instagram"></i>
+      </a>
+    </div>
+  </div>
+  <p class="copyright" >©headphones 2020</p>
+</footer>
+
+
+  <!-- End of the Footer-->         
+
+
+
 </body>
 </html>

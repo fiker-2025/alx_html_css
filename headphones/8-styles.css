@@ -1,33 +1,607 @@
-.navbar {
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  background-image: url("images/headphones_hero_1.jpg");
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+  
+  height: 100px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+  background-image: url("images/headphones_hero_1.jpg") center/cover no-repeat;
+}
+
+.header-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
+  width: 100%;
 }
 
-.nav-links {
+/* Logo */
+.logo {
   display: flex;
-  gap: 20px;
-  list-style: none;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: white;
 }
 
+.logo img {
+  height: 35px;
+}
+
+/* Navigation */
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.nav-list a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  color: white;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+.nav-list a:hover {
+  color: #ff5c5c; /* Accent red tone from your button */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-list {
+    display: none;
+  }
+}
+/* HERO SECTION */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+  padding: 0 1.5rem;
+  width: 100%;
+
+}
+
+.hero-content {
+  max-width: 800px;
+}
+
+/* Optional logo styling */
+.hero-logo {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Text Styling */
+.hero-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 1.3;
+  margin-bottom: 15px;
+  margin-top: 250px;
+  color: #ffffff;
+}
+
+.hero-subtitle {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: #e0e0e0;
+  margin-bottom: 80px;
+}
+
+.hero-description {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #d0d0d0;
+  margin-top: 80px;
+}
+
+/* CTA Button */
+.cta-btn {
+  background-color: #ff5c5c;
+  color: #fff;
+  padding: 14px 40px;
+  border-radius: 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #ff7676;
+  transform: translateY(-3px);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .hero {
+    height: auto;
+    padding: 100px 20px;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .cta-btn {
+    padding: 12px 30px;
+  }
+}
+/* WHAT WE DO SECTION */
+.what-we-do {
+  padding: 100px 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.section-header {
+  max-width: 700px;
+  margin: 0 auto 60px;
+}
+
+.section-header h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #0b1b3c;
+  margin-bottom: 15px;
+}
+
+.section-header p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Features Grid */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+  justify-items: center;
+}
+
+.feature {
+  max-width: 250px;
+}
+
+.feature-icon {
+  font-size: 48px;
+  color: #ff5c5c;
+  margin-bottom: 20px;
+}
+
+.feature h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #0b1b3c;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .what-we-do {
+    padding: 60px 15px;
+  }
+
+  .section-header h2 {
+    font-size: 1.5rem;
+  }
+}
+/* OUR RESULTS SECTION */
+.our-results {
+  padding: 100px 20px;
+  background: linear-gradient(to bottom, #0b1b3c, #0b1b3c);
+  color: #ffffff;
+  text-align: center;
+  background-image: url("images/headphones_hero_2.jpg");
+}
+
+.our-results .section-header h2 {
+  color: #ffffff;
+}
+
+.our-results .section-header p {
+  color: #cccccc;
+  margin-bottom: 50px;
+}
+
+/* Results Grid */
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+  justify-items: center;
+}
+
+/* Pentagon Card */
+.result-card {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+}
+
+.pentagon {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  background-color: #ff5c5c;
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  margin: 0 auto;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.pentagon:hover {
+  transform: translateY(-10px);
+  background-color: #ff7676;
+}
+
+.percent {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.pentagon p {
+  font-size: 0.8rem;
+  color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .our-results {
+    padding: 60px 15px;
+  }
+
+  .results-grid {
+    gap: 30px;
+  }
+}
+/* CONTACT SECTION */
+.contact {
+  background: #f8f9fc;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.contact .section-header h2 {
+  color: #0b1b3c;
+}
+
+.contact .section-header p {
+  color: #555;
+  margin-bottom: 40px;
+}
+
+/* Contact Form Layout */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #ff5c5c;
+  box-shadow: 0 0 6px rgba(255, 92, 92, 0.3);
+}
+
+/* Submit Button */
+.btn-submit {
+  display: inline-block;
+  width: 100%;
+  background-color: #ff5c5c;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.btn-submit:hover {
+  background-color: #ff7676;
+  transform: translateY(-3px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact {
+    padding: 60px 15px;
+  }
+}
+/* ===== FOOTER ===== */
+.footer {
+  background-color: #071629; /* matches Figma dark navy tone */
+  padding: 40px 80px;
+  color: #ffffff;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-logo {
+  width: 160px;
+  margin-bottom: 20px;
+}
+
+.copyright {
+  font-size: 0.9rem;
+  color: #ffffff;
+  opacity: 0.6;
+  text-align: center;
+}
+
+.footer-right a {
+  color: #ffffff;
+  font-size: 1.4rem;
+  margin-left: 20px;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-right a:hover {
+  color: #ff5c5c; /* red accent from your design */
+  transform: translateY(-3px);
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-right {
+    margin-top: 20px;
+  }
+
+  .footer-right a {
+    margin: 0 10px;
+  }
+}
+/* Our Results grid layout */
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1.5rem;
+  align-items: start;
+  margin-top: 1.5rem;
+}
+
+/* center card contents */
+.result-card {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  /* optional padding so cards don't touch */
+  padding-top: 0.5rem;
+}
+
+/* The pentagon shape */
+.pentagon {
+  /* size */
+  width: 140px;
+  height: 140px;
+  /* fill */
+  background: linear-gradient(135deg, #5b8ef6 0%, #4a6ef0 100%);
+  /* create pentagon */
+  -webkit-clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  /* center text inside */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  box-shadow: 0 8px 18px rgba(18, 40, 80, 0.12);
+  transition: transform .18s ease, box-shadow .18s ease;
+  /* give room for the small label under the percent */
+  gap: 6px;
+  border-radius: 6px; /* keep corners soft inside clip-path */
+}
+
+/* hover effect */
+.pentagon:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 18px 30px rgba(18, 40, 80, 0.18);
+}
+
+/* Big percent label */
+.pentagon .percent {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.01em;
+}
+
+/* small description text inside pentagon */
+.pentagon p {
+  margin: 0;
+  font-size: 13px;
+  opacity: 0.95;
+  line-height: 1.1;
+  max-width: 92%;
+}
+
+/* optional: make the label appear slightly outside the bottom point */
+.result-card .pentagon + p {
+  margin-top: 0.5rem;
+}
+
+/* If you prefer label beneath the pentagon (instead of inside),
+   move the <p> outside .pentagon in the HTML and use this:
+.result-card p { margin-top: 0.6rem; text-align:center; color:#333; font-size:14px; }
+*/
+
+/* Responsive scaling for small screens */
+@media (max-width: 420px) {
+  .pentagon {
+    width: 110px;
+    height: 110px;
+    padding: 0.75rem;
+  }
+
+  .pentagon .percent {
+    font-size: 18px;
+  }
+
+  .pentagon p {
+    font-size: 12px;
+  }
+}
+
+/* ======= HAMBURGER MENU STYLES ======= */
+
+/* hide by default on large screens */
 .hamburger {
   display: none;
-  font-size: 28px;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 26px;
+  height: 18px;
+  background: none;
+  border: none;
   cursor: pointer;
+  padding: 0;
+  z-index: 1001; /* above nav */
 }
 
+.hamburger .bar {
+  height: 3px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Mobile layout */
 @media (max-width: 480px) {
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    background: #121212;
-    position: absolute;
+  .nav {
+    position: fixed;
     top: 60px;
-    right: 20px;
-    padding: 20px;
-    border-radius: 8px;
+    right: -100%;
+    width: 200px;
+    background: rgba(0, 0, 0, 0.9);
+    transition: right 0.3s ease;
+    border-radius: 8px 0 0 8px;
   }
-  .nav-links.show { display: flex; }
-  .hamburger { display: block; }
+
+  .nav.active {
+    right: 10px;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .nav-list li a {
+    color: #fff;
+    font-size: 16px;
+    display: block;
+    text-align: right;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  /* Animate hamburger into X */
+  .hamburger.active .bar:nth-child(1) {
+    transform: rotate(45deg) translateY(7px);
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: rotate(-45deg) translateY(-7px);
+  }
 }

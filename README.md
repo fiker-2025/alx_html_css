@@ -1,21 +1,31 @@
-# Dynamic Quote Generator
+# Custom Web Page Implementation
 
-## Description
-This project is a dynamic quote generator that allows users to:
-- Generate random quotes
-- Add new quotes
-- Filter quotes by category
-- Import/export quotes in JSON
-- Sync quotes with a server (GET + POST)
-- Persist quotes using localStorage and sessionStorage
+Welcome to this handcrafted web page project! Built entirely from scratch using **HTML**, **CSS**, and best practices in **Accessibility** and **Responsive Design**, this project is a pixel-perfect implementation of a design by renowned UI/UX designer **Nicolas Philippot**.
 
-## How to Run
-1. Open `index.html` in a browser
-2. Use the buttons and inputs to interact with the app
+## 📌 Project Overview
 
-## Features
-- Dynamic DOM manipulation
-- Web storage integration
-- JSON import/export
-- Server sync with conflict resolution
-- Periodic automatic updates
+This project demonstrates a complete front-end build without relying on any external libraries or frameworks. The goal is to replicate the designer's vision with precision while ensuring the page is accessible, responsive, and semantically correct.
+
+## 🛠️ Technologies Used
+
+- **HTML5** – Semantic structure and content
+
+- **CSS3** – Styling, layout, and animations
+
+- **Responsive Design** – Mobile-first approach using media queries
+
+- **Accessibility (a11y)** – ARIA roles, keyboard navigation, and screen reader support
+
+## 📐 Design Reference
+
+The layout and visual elements are based on a design file provided by **Nicolas Philippot**. Every detail—from typography to spacing—has been carefully translated into code to match the original design.
+
+## 🚀 Getting Started
+
+To view the project locally:
+
+1. Clone the repository:
+
+  ```bash
+
+  git clone https://github.com/your-username/project-name.git
